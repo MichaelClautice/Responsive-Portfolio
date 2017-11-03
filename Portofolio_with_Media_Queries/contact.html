@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <!-- what is this?:-->
+  <meta charset="UTF-8">
+  <title>Contact | Michael Clautice</title>
+<!--   Different browsers render pgs differently so web developers must make websites cross-browser compatible. -->
+
+<!-- Reset.css (or Normalize.css) will “reset” all browser-specific CSS so a site will appear the same in all browsers. -->
+
+<!-- Since browser-specific CSS must be reset first, the link to reset.css or normalize.css must appear first above other links since the browser reads the HTML top to bottom -->
+
+<!-- don't forget that the reset.css file is in the assets folder -->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+<!-- here is a link to our external CSS file -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head><!-- close the head element -->
+<!--
+*
+start the body here!
+*
+ -->
+<body>
+<!-- The header element contains the logo & navbar -->
+  <header id="masthead">
+    <div class="container">
+<!-- the logo is also a home pg link -->
+      <a href="index.html" id="logo">Michael Clautice</a>
+<!-- here is a nav element to hold the links to the other pages -->
+      <nav>
+<!-- but where are the "poles"? -->
+<!-- the poles are in the CSS as border-left properties! -->
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header><!-- close the header here! -->
+<!--
+*
+here we start the main container that will
+hold the main-section on the left and
+the sidebar on the right
+*
+-->
+  <div id="main-container" class="container">
+<!--
+*
+here is the main-section element for the left side
+*
+-->
+    <section class="main-section">
+      <h1>Contact Mike</h1>
+
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
+
+    </section><!-- close the main-section on the left side-->
+<!--
+*
+here is a section element for the left sidebar
+*
+-->
+    <section class="sidebar">
+      <div id="connect">
+        <h2>Connect w/ Mike</h2>
+        <a href="#"><img src="assets/images/github-128.png" class="social" alt="GitHub" /></a>
+        <a href="#"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
+        <a href="#"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
+      </div>
+    </section><!-- close the section element for the left sidebar -->
+  </div><!-- close the main-container -->
+<!--
+*
+here be the footer y'all!
+*
+-->
+  <footer>
+    <div class="container">
+      Copyright &copy; 2016 Your Name
+    </div>
+  </footer>
+</body>
+
+</html>
